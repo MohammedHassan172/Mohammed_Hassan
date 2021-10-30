@@ -980,22 +980,12 @@ Source: DCJ0303.pdf</description>
 <wire x1="38.1" y1="71.12" x2="33.02" y2="71.12" width="0.1524" layer="91"/>
 <label x="33.02" y="71.12" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
-<segment>
-<pinref part="ENCODER" gate="A" pin="1"/>
-<wire x1="7.62" y1="55.88" x2="12.7" y2="55.88" width="0.1524" layer="91"/>
-<label x="12.7" y="55.88" size="1.778" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="PA_12" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PA_12"/>
 <wire x1="38.1" y1="66.04" x2="33.02" y2="66.04" width="0.1524" layer="91"/>
 <label x="33.02" y="66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="ENCODER" gate="A" pin="2"/>
-<wire x1="7.62" y1="58.42" x2="12.7" y2="58.42" width="0.1524" layer="91"/>
-<label x="12.7" y="58.42" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PA_15" class="0">
@@ -1011,12 +1001,22 @@ Source: DCJ0303.pdf</description>
 <wire x1="38.1" y1="55.88" x2="33.02" y2="55.88" width="0.1524" layer="91"/>
 <label x="33.02" y="55.88" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="ENCODER" gate="A" pin="1"/>
+<wire x1="7.62" y1="55.88" x2="12.7" y2="55.88" width="0.1524" layer="91"/>
+<label x="12.7" y="55.88" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="PB_4" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PB_4"/>
 <wire x1="38.1" y1="50.8" x2="33.02" y2="50.8" width="0.1524" layer="91"/>
 <label x="33.02" y="50.8" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="ENCODER" gate="A" pin="2"/>
+<wire x1="7.62" y1="58.42" x2="12.7" y2="58.42" width="0.1524" layer="91"/>
+<label x="12.7" y="58.42" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PB_5" class="0">
