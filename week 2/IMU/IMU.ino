@@ -40,16 +40,16 @@ void loop() {
     mpu.dmpGetYawPitchRoll(ypr, &q, &gravity);
     Serial.print("yaw = ");
     Serial.print(ypr[0] * 180/M_PI);
-    Serial.println("pitch = ");
+    Serial.print("\tpitch = ");
     Serial.print(ypr[1] * 180/M_PI);
-    Serial.println("roll = ");
+    Serial.print("\troll = ");
     Serial.print(ypr[2] * 180/M_PI);
 
     Serial3.print("yaw = ");
     Serial3.print(ypr[0] * 180/M_PI);
-    Serial3.println("pitch = ");
+    Serial3.print("\tpitch = ");
     Serial3.print(ypr[1] * 180/M_PI);
-    Serial3.println("roll = ");
+    Serial3.print("\troll = ");
     Serial3.print(ypr[2] * 180/M_PI);
     
   }
