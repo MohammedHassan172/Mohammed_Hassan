@@ -1,7 +1,6 @@
 #include <ros.h>
 #include <std_msgs/Int64.h>
 long long counter = 0;
-const int pps = 360;
 #define SIGNAL_A PB3
 #define SIGNAL_B PB4
 ros::NodeHandle  nh;
