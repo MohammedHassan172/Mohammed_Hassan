@@ -50,7 +50,7 @@ void PID_Control()
     if (total_error >= max_control) total_error = max_control;
     else if (total_error <= min_control) total_error = min_control;
     double delta_error = error - last_error; //to calculate the change for the devirative.
-    output = Kp*error + (Ki*time_sample)*total_error + (Kd/time_sample)*delta_error; //PID control compute
+    output = Kp*error + (Ki*time_sample)*total_error - (Kd/time_sample)*delta_error; //PID control compute
 
    //(ask why this is needed).
    //{
