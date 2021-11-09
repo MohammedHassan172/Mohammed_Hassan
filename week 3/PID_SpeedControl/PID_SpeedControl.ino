@@ -1,5 +1,7 @@
 #include <ros.h>
 #include <std_msgs/Float64.h>
+#define pmw PA6
+#define dir PA5
 ros::NodeHandle nh;
 double setpoint; // sent speed.
 double output; // the output speed from PID.
@@ -25,6 +27,8 @@ void messageCb( const std_msgs::Float64& setpoint_ros)
 
 void setup() 
 {
+ pinMode(pmw,OUTPUT);
+ pinMode(dir,OUTPUT);
  nh.initNode(); 
  nh.subscribe(sub);
 
@@ -33,6 +37,15 @@ void setup()
 void loop() 
 {
   PID_Control();
+  analogWrite(pmw,output);
+  if(setpoint > 0)
+  {
+   digitalWrite(dir,HIGH); 
+  }
+  else
+  {
+   digitalWrite(dir,LOW); 
+  }
   nh.spinOnce();
   delay(1);
 
