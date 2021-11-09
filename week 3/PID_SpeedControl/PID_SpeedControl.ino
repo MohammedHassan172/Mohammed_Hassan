@@ -6,9 +6,9 @@ ros::NodeHandle nh;
 double setpoint; // sent speed.
 double output; // the output speed from PID.
 double sensor_output; // sensor reading.
-double Kp; //proportional gain.
-double Ki; //integral gain.
-double Kd; //derivative gain.
+double Kp = 1; //proportional gain.
+double Ki = 1; //integral gain.
+double Kd = 1; //derivative gain.
 int time_sample = 1000; // the period for each output
 unsigned long last_time;
 double total_error; //For the integral term.
