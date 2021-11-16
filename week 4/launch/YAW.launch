@@ -1,0 +1,7 @@
+<launch>
+  <node name="yawRAW_node" pkg="beginner_tutorials" type="IMU_KF1D.py" output="screen"/>
+  <node name="rqt_plot_node" pkg="rqt_plot" type="rqt_plot" output="screen"/>
+  <node name="serial_node"        pkg="rosserial_python"      type="serial_node.py">
+    <param name="port"              type="string"               value="/dev/ttyACM0"/>
+  </node>
+</launch>
